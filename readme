@@ -1,0 +1,9 @@
+//Simple App to store students record and dispaly there details
+
+step 1. setup schoolapp database in postgres
+
+step 2.
+Now make a change on schoolapp.py file, user and password according to system DBMS credentials
+postgres://user:pass@localhost:5432/schoolapp
+
+Step 3. Now run school.py

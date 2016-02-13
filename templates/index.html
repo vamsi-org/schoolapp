@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link REL="StyleSheet" href="/static/style.css" TYPE="text/css"> </head>
+
+   <title>School App</title>
+
+
+<body>
+    <h1  align="center">Add Student</h1>
+    <h2>Enter Student Details</h2>
+    <form method="POST">
+        <p>Name</p><input type="text" name="name" id="t1">
+        <p>Father's Name</p><input type="text" name="fathername" id="t2">
+        <p>Email</p><input type="text" name="email"id="t3">
+        <p>Address</p><input type="text" name="address" id="t4">
+        <p>School Name</p><input type="text"   name="schoolname" id="t5">
+
+      </br></br>
+        <button formaction="{{url_for('addrec') }}" >Add Record</button>
+        <button formaction="{{ url_for('show_all') }}"  onclick="submit" >Show Record</button>
+          <input type="button" onclick="clearFields()" value="Clear">
+    </form>
+    <script>
+
+        function clearFields() {
+    document.getElementById("t1").value=""
+    document.getElementById("t2").value=""
+    document.getElementById("t3").value=""
+    document.getElementById("t4").value=""
+    document.getElementById("t5").value=""
+}
+
+    </script>
+
+</body>
+</html>
